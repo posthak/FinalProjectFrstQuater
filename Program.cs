@@ -1,9 +1,8 @@
 ﻿
 Console.Clear();
 String[] array = { "hello", "2", "world", ":-)" };
-String[] arrayResult = new String[GetNewArrayLength(array)];
 
-PrintArrayResult(array, arrayResult);
+PrintArrayResult(array);
 
 int GetNewArrayLength(String[] arr)
 {
@@ -18,9 +17,10 @@ int GetNewArrayLength(String[] arr)
     return j;
 }
 
-void PrintArrayResult(String[] ar, String[] arRes)
+void PrintArrayResult(String[] ar)
 {
     int i = 0;
+    String[] arRes = new String[GetNewArrayLength(array)];
     foreach (var item in ar)
     {
         if (item.Length <= 3)
