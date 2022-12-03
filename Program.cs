@@ -20,7 +20,7 @@ int GetNewArrayLength(String[] arr)
 void PrintArrayResult(String[] ar)
 {
     int i = 0;
-    String[] arRes = new String[GetNewArrayLength(array)];
+    String[] arRes = new String[GetNewArrayLength(ar)];
     foreach (var item in ar)
     {
         if (item.Length <= 3)
